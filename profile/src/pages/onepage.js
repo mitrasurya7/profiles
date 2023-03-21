@@ -10,21 +10,26 @@ export function Onepage() {
   return (
     <>
       <section className="text-white p-10">
-        <Navbar />
+
         {/* baner */}
         <Banner />
       </section>
       <Mydescribe />
-      <section>
+      
+      <section  id="skill" className="pt-16 bg-white  " > 
         <Skill />
         {/* History */}
+        <span id="aboutme" className=" pt-20">
         <Histories />
-        <div className="bg-white p-10">
+        </span>
+        <div className="bg-white p-10 pt-20" id="portofolio">
           <p className="font-bold text-2xl">Portofolio</p>
           <Slideshow />
         </div>
       </section>
+      <span id="contactme" >
       <Mailer />
+      </span>
       <Footer />
     </>
   );

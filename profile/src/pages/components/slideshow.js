@@ -39,7 +39,7 @@ export function Slideshow() {
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
         {portofolios.map((img, index) => (
-          <Image className="slide" key={index} src={img} />
+          <Image className="slide" key={index} src={img} alt={img} />
         ))}
       </div>
 

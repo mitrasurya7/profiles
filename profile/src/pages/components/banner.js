@@ -24,7 +24,7 @@ export function Banner() {
       </div>
       <Image
         src={profile}
-        className=" object-fill w-80 grayscale rounded-md relative mx-auto left-56"
+        className=" object-fill w-80 grayscale rounded-md relative mx-auto left-56" alt="myProfile"
       />
     </section>
   );
