@@ -1,7 +1,15 @@
 import Head from "next/head";
+import React from 'react';
 import { Inter } from "next/font/google";
-import { Onepage } from "./onepage";
-import { Navbar } from "./components/navbar";
+import  Mailer  from "./mailer";
+import Histories  from "./histories";
+import Banner from "./banner";
+import Footer from "./footer";
+import Skill from "./skill";
+import Mydescribe from "./mydescribe";
+import Slideshow from "./slideshow";
+import Navbar from "./navbar";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +26,28 @@ export default function Home() {
       <div className=" sticky top-0 z-50 bg-slate-900">
         <Navbar />
         </div>
-        <Onepage />
+        <section className="text-white p-10">
+
+{/* baner */}
+<Banner />
+</section>
+<Mydescribe />
+
+<section  id="skill" className="pt-16 bg-white  " > 
+<Skill />
+{/* History */}
+<span id="aboutme" className=" pt-20">
+<Histories />
+</span>
+<div className="bg-white p-10 pt-20" id="portofolio">
+  <p className="font-bold text-2xl">Portofolio</p>
+  <Slideshow />
+</div>
+</section>
+<span id="contactme" >
+<Mailer />
+</span>
+<Footer />
       </main>
     </>
   );

@@ -1,4 +1,5 @@
-export function Histories() {
+import React from 'react';
+const Histories =() => {
   const Hacktiv8 =
     "https://sertiva.id/credential/a3e12b90-d8d0-4543-9b76-3259fe6e15b1";
   const JDicoding = "https://www.dicoding.com/certificates/N9ZO7MR5RZG5";
@@ -38,3 +39,4 @@ export function Histories() {
     </div>
   );
 }
+export default Histories

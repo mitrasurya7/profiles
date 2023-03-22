@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-export function Mailer() {
+ const Mailer = () => {
   const [mail, setMail] = useState({
     email: "",
     waPhone: "",  
@@ -82,3 +82,5 @@ export function Mailer() {
     </section>
   );
 }
+
+export default Mailer

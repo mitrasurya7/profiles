@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
-import autodok from "../../assets/autodok.png";
-import hackbid from "../../assets/hackbid.png";
-import mcourse from "../../assets/mcourse.png";
+import autodok from "../assets/autodok.png";
+import hackbid from "../assets/hackbid.png";
+import mcourse from "../assets/mcourse.png";
 const portofolios = [hackbid, autodok, mcourse];
 const delay = 2500;
 
-export function Slideshow() {
+const Slideshow = () => {
   const [index, setIndex] = React.useState(0);
   const timeoutRef = React.useRef(null);
 
@@ -57,3 +57,5 @@ export function Slideshow() {
     </div>
   );
 }
+
+export default Slideshow

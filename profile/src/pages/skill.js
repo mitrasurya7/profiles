@@ -1,4 +1,5 @@
-export function Skill() {
+import React from 'react';
+ const Skill = () => {
   return (
     <div className="flex justify-center gap-3 bg-white p-5">
       <div
@@ -43,3 +44,5 @@ export function Skill() {
     </div>
   );
 }
+
+export default Skill

@@ -1,4 +1,5 @@
-export function Footer() {
+import React from 'react';
+const Footer = () => {
   return (
     <div className=" border-t border-slate-600 p-2 text-slate-100 flex justify-between">
       <div className="font-semibold">Follow Me On</div>
@@ -12,3 +13,5 @@ export function Footer() {
     </div>
   );
 }
+
+export default Footer

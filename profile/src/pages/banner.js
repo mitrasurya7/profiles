@@ -1,7 +1,8 @@
-import profile from "../../assets/profile.png";
+import profile from "../assets/profile.png"
 import Image from "next/image";
+import React from 'react';
 
-export function Banner() {
+ const Banner = () => {
   return (
     <section>
       <div id="profile" className="p-5">
@@ -29,3 +30,5 @@ export function Banner() {
     </section>
   );
 }
+
+export default Banner
